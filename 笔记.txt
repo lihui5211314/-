@@ -1,0 +1,18 @@
+git 工作流的操作
+    1.在本地新建一个文件夹
+    2.进入到这个文件夹 左手shift+右键->进入命令行
+      或者 直接右键 git Bash Here
+    3.创建一个新的文件夹 mkdir 测试文件夹 testhui
+        也可以手动可以创建
+    4.进入测试文件夹 --cd testhui（文件夹的名字）
+    5.把本地文件初始化为一个git的本地仓库 --git init
+        因为只有把本地仓库初始化为git仓库，才可以用git来操控
+    6.给本地文件夹添加新内容
+    7.git add . 这是把所有的文件都保存到暂存区
+        git add -A
+        git add aa.text 把指定的文件添加到暂存区
+    8.git commit -m"注释的内容" 这是把暂存进去的内容添加到历史区
+    9.添加一个远程自己的仓库 git remote add origin 地址；
+        备注：如何查看自己本地连接了那些远程仓库？
+        git remote -v
+    10.把本地文件推送到远程仓库 git push origin master
